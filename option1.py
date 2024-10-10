@@ -41,7 +41,7 @@ def findDuplicate2(input: List[int]) -> int:
 # It is very lucky I got this problem because I did discuss and research this before with a friend while I was
 # taking AP CSA. The idea behind this solution is that as all integers in the domain [1,N] appear at least once,
 # so if we just check the index for every element (List[value of element]), then we shouldn't check any index twice.
-# Any already checked index is a duplicate. Although we can't just change it to any value such as "0" either, 
+# Any value directing us to an already checked index is a duplicate. Although, we can't just change it to any value such as "0" either, 
 # because then what happens if we change something the loop hasn't reached yet and we already lose the data by 
 # changing it to 0. Then the whole thing falls apart. So we have to indicate the index has already been checked
 # without losing the value. For that we can just assign the value its negative and omit the negative when it is turn
